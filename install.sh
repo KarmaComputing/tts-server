@@ -4,6 +4,8 @@ apt-get upgrade
 
 # Install apache
 apt install -y apache2
+a2enmod proxy_uwsgi
+systemctl restart apache2
 
 # Install python venv and pip
 apt install python3.8-venv
