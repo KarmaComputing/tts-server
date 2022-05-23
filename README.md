@@ -17,10 +17,12 @@ Install server requirements (only run on server)
 
 ## Local development
 
+> Note the requirements-api.txt is *not* requirements.txt
+
 ```
 python3 -m venv venv
 . venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-api.txt
 export FLASK_APP=app
 export FLASK_DEBUG=1
 flask run
