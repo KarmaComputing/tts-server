@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <form action="{{ url_for('submit') }}" method="POST">
+    <textarea name="text"></textarea>
+    <input type="submit" id="submit" />
+    <script>
+       var elmSubmit =  document.getElementById("submit");
+       document.getElementById("submit").addEventListener("click", function() {
+            elmSubmit.value = "Please wait";
+       });
+    </script>
+    </body>
+</html>
