@@ -1,3 +1,4 @@
+python-dotenv==0.13.0
 anyascii==0.3.1
 appdirs==1.4.4
 audioread==2.1.9
