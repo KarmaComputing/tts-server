@@ -1,3 +1,15 @@
+# v0.0.2 (Mon May 23 2022)
+
+#### 🐛 Bug Fix
+
+- added template [#6](https://github.com/KarmaComputing/tts-server/pull/6) ([@chrisjsimpson](https://github.com/chrisjsimpson))
+
+#### Authors: 1
+
+- [@chrisjsimpson](https://github.com/chrisjsimpson)
+
+---
+
 # v0.0.1 (Mon May 23 2022)
 
 :tada: This release contains work from new contributors! :tada:
