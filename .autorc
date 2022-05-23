@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+
+  ],
+  "owner": "KarmaComputing",
+  "repo": "tts-server",
+  "name": "joeltejeda",
+  "email": "joeltejeda@karmacomputing.co.uk"
+}
