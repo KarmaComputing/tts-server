@@ -19,6 +19,7 @@ app = Flask(__name__)
 app.config.update(os.environ)
 
 UPLOADS_BATH_PATH = app.config.get("UPLOADS_BATH_PATH")
+TTS_PATH = app.config.get("TTS_PATH")
 
 
 @app.route("/download/<name>")
@@ -38,7 +39,7 @@ def submit():
 
     # WARNING this is unsafe, see shell.escape
     subprocess.run(
-        f'time tts --text "{text_unsafe}" --out_path "{UPLOADS_BATH_PATH}/{filename}" --model_name tts_models/en/ljspeech/fast_pitch',  # noqa: E501
+        f'{TTS_PATH} --text "{text_unsafe}" --out_path "{UPLOADS_BATH_PATH}/{filename}" --model_name tts_models/en/ljspeech/fast_pitch',  # noqa: E501
         shell=True,
     )
     return redirect(url_for("download_file", name=filename))
