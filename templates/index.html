@@ -10,5 +10,30 @@
             elmSubmit.value = "Please wait";
        });
     </script>
+
+    <h1>api examples</h1>
+    Send a simple `POST` request with text, and the response is a
+    text to speech (TTS) .wav file.
+
+    <h2>fetch example</h2>
+    <pre>
+    fetch("http://host-or-ip/submit", {
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+      },
+      "body": "text=With+this+you+can+generate+audio+from+text.",
+      "method": "POST",
+      "mode": "cors",
+      "credentials": "omit"
+    });
+    </pre>
+
+    <h2>curl example</h2>
+    <pre>
+    curl 'http://host-or-ip/submit' \
+    --data-raw 'text=With+this+you+can+generate+audio+from+text.' \
+    --insecure
+    </pre>
+
     </body>
 </html>
