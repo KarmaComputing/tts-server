@@ -1,3 +1,15 @@
+# v0.0.4 (Tue May 24 2022)
+
+#### 🐛 Bug Fix
+
+- #8 github actions to deploy the container [#9](https://github.com/KarmaComputing/tts-server/pull/9) ([@joeltejeda](https://github.com/joeltejeda))
+
+#### Authors: 1
+
+- [@joeltejeda](https://github.com/joeltejeda)
+
+---
+
 # v0.0.3 (Tue May 24 2022)
 
 #### 🐛 Bug Fix
