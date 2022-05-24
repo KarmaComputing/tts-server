@@ -27,3 +27,11 @@ export FLASK_APP=app
 export FLASK_DEBUG=1
 flask run
 ```
+## Run Docker container
+```
+cd tts-server/
+docker build -t tts-server .
+docker run -p 5000:5000 -it tts-server
+```
+
+Visit http://127.0.0.1:5000

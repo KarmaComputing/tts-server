@@ -47,11 +47,10 @@ mecab-python3==1.0.3
 networkx==2.8.2
 num2words==0.5.10
 numba==0.53.0
-numpy==1.22.4
+numpy==1.19.5
 packaging==21.3
 pandas==1.4.2
 Pillow==9.1.1
-pkg-resources==0.0.0
 pooch==1.6.0
 protobuf==3.20.1
 pycparser==2.21
