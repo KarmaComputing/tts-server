@@ -1,3 +1,15 @@
+# v0.0.3 (Tue May 24 2022)
+
+#### 🐛 Bug Fix
+
+- #5 adding docker container [#7](https://github.com/KarmaComputing/tts-server/pull/7) ([@joeltejeda](https://github.com/joeltejeda))
+
+#### Authors: 1
+
+- [@joeltejeda](https://github.com/joeltejeda)
+
+---
+
 # v0.0.2 (Mon May 23 2022)
 
 #### 🐛 Bug Fix
