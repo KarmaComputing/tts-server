@@ -2,9 +2,9 @@ name: Container Build & Publish
 
 on:
   push:
-    # Publish `master` as Docker `latest` image.
+    # Publish `main` as Docker `latest` image.
     branches:
-      - master
+      - main
     tags:
       - v*
   pull_request:
