@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 USER root
-WORKDIR /code
-COPY ./ /code
 
 #!/bin/bash
 RUN apt update -y
@@ -46,14 +44,15 @@ RUN cd buildllvm \
 # Install TTS
 RUN apt-get install libsndfile1 -y
 RUN sudo -iu tts 
-
+WORKDIR /code
+COPY ./ /code
 RUN python3 -m venv venv
 RUN . venv/bin/activate
+RUN cp .env.example .env
 RUN pip install wheel
 RUN pip install -r requirements.txt
 
 # Test tts
 RUN sudo -iu tts 
 RUN tts --text "This is a test"
-RUN sudo -iu root
-ENTRYPOINT ["/code/run-server.sh"]
+ENTRYPOINT ["/code/entrypoint.sh"]
