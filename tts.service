@@ -1,0 +1,18 @@
+[Unit]
+Description=tts
+After=syslog.target
+
+[Service]
+ExecStart=/home/tts/tts-server/venv/bin/uwsgi --socket 127.0.0.1:9090 --wsgi-file /home/tts/tts-server/app.py --virtualenv /home/tts/tts-server/venv --callable app
+# Requires systemd version 211 or newer
+RuntimeDirectory=tts
+WorkingDirectory=/home/tts/tts-server/
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
+
