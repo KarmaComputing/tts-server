@@ -1,3 +1,15 @@
+# v0.0.8 (Wed May 25 2022)
+
+#### 🐛 Bug Fix
+
+- deploying container with uwsgi as tts user [#11](https://github.com/KarmaComputing/tts-server/pull/11) ([@joeltejeda](https://github.com/joeltejeda))
+
+#### Authors: 1
+
+- [@joeltejeda](https://github.com/joeltejeda)
+
+---
+
 # v0.0.7 (Wed May 25 2022)
 
 #### ⚠️ Pushed to `main`
