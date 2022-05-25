@@ -1,3 +1,15 @@
+# v0.0.7 (Wed May 25 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Update issue templates ([@joeltejeda](https://github.com/joeltejeda))
+
+#### Authors: 1
+
+- [@joeltejeda](https://github.com/joeltejeda)
+
+---
+
 # v0.0.6 (Wed May 25 2022)
 
 #### ⚠️ Pushed to `main`
