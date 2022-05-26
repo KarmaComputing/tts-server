@@ -1,3 +1,15 @@
+# v0.0.11 (Thu May 26 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Update README.md ([@joeltejeda](https://github.com/joeltejeda))
+
+#### Authors: 1
+
+- [@joeltejeda](https://github.com/joeltejeda)
+
+---
+
 # v0.0.10 (Wed May 25 2022)
 
 #### ⚠️ Pushed to `main`
