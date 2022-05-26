@@ -37,7 +37,7 @@ Visit http://127.0.0.1:9090
 
 ## Run Docker container from github package
 ```
-docker build -t tts-server .
+docker pull ghcr.io/karmacomputing/tts-server/tts-server:main
 docker run -p 9090:9090 -it ghcr.io/karmacomputing/tts-server/tts-server:main
 ```
 Visit http://127.0.0.1:9090
