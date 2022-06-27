@@ -1,4 +1,4 @@
-# Test To Speech (TTS) Server setup
+# Text To Speech (TTS) Server setup
 
 Generate `.wav` file from text input.
 
