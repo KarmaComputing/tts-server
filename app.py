@@ -25,7 +25,7 @@ language_to_model = {
     "de": "tts_models/de/thorsten/tacotron2-DCA",
     "en": "tts_models/de/thorsten/tacotron2-DCA",
     "fe": "tts_models/fr/mai/tacotron2-DDC",
-    "zh-CN": "tts_models/zh-CN/baker/tacotron2-DDC-GST",
+    "zh-cn": "tts_models/zh-CN/baker/tacotron2-DDC-GST",
     "es": "tts_models/es/mai/tacotron2-DDC",
     "nl": "tts_models/nl/mai/tacotron2-DDC",
     "tr": "tts_models/tr/common-voice/glow-tts",
