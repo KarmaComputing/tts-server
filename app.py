@@ -23,7 +23,7 @@ supported_languages = ["en", "de", "fr", "zh-cn", "es", "nl", "tr", "it", "ja"]
 # and can be extended in future
 language_to_model = {
     "de": "tts_models/de/thorsten/tacotron2-DCA",
-    "en": "tts_models/de/thorsten/tacotron2-DCA",
+    "en": "tts_models/en/ljspeech/fast_pitch",
     "fr": "tts_models/fr/mai/tacotron2-DDC",
     "zh-cn": "tts_models/zh-CN/baker/tacotron2-DDC-GST",
     "es": "tts_models/es/mai/tacotron2-DDC",
