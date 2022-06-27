@@ -27,6 +27,11 @@ export FLASK_APP=app
 export FLASK_DEBUG=1
 flask run
 ```
+
+After you have a `ven`, you can also use the shortcut
+```
+./run.sh
+```
 ## Run Docker container
 ```
 docker pull ghcr.io/karmacomputing/tts-server/tts-server:main
