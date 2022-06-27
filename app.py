@@ -15,6 +15,8 @@ from time import time_ns
 
 load_dotenv(verbose=True)
 
+supported_languages = ["en", "de", "zh-cn"]
+
 app = Flask(__name__)
 app.config.update(os.environ)
 
@@ -34,11 +36,22 @@ def hello_world():
 @app.route("/submit", methods=["POST"])
 def submit():
     text_unsafe = request.form.get("text")
+
+    # Set default language model to use
+    model_name = "tts_models/en/ljspeech/fast_pitch"
+    # Get different language model if possible
+    if request.args.get("lang"):
+        language = request.args.get("lang").lower()
+        if language in supported_languages:
+            # wip default to de
+            # see github.com/KarmaComputing/tts-server/issues/14
+            model_name = "tts_models/de/thorsten/tacotron2-DCA"
+
     filename = f"{time_ns()}.wav"
 
     # WARNING this is unsafe, see shell.escape
     subprocess.run(
-        f'tts --text "{text_unsafe}" --out_path "{UPLOADS_BATH_PATH}/{filename}" --model_name tts_models/en/ljspeech/fast_pitch',  # noqa: E501
+        f'tts --text "{text_unsafe}" --out_path "{UPLOADS_BATH_PATH}/{filename}" --model_name {model_name}',  # noqa: E501
         shell=True,
     )
     return redirect(url_for("download_file", name=filename))
