@@ -3,6 +3,18 @@
     <body>
     <form action="{{ url_for('submit') }}" method="POST">
     <textarea name="text"></textarea>
+    <select name="lang">
+      <option value="en">English</option>
+      <option value="de">German</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+      <option value="zh-cn">Chinese</option>
+      <option value="nl">Dutch (Standard)</option>
+      <option value="tr">Turkish</option>
+      <option value="it">Italian (Standard)</option>
+      <option value="ja">Japanese</option>
+    </select>
     <input type="submit" id="submit" />
     <script>
        var elmSubmit =  document.getElementById("submit");
