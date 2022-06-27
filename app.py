@@ -15,7 +15,7 @@ from time import time_ns
 
 load_dotenv(verbose=True)
 
-supported_languages = ["en", "de", "fe", "zh-cn", "es", "nl", "tr", "it", "ja"]
+supported_languages = ["en", "de", "fr", "zh-cn", "es", "nl", "tr", "it", "ja"]
 
 # Map the ISO 639-1 language code to a model which supports that language
 # Note: Some languages have multiple models to choose from, this is simpler
@@ -24,7 +24,7 @@ supported_languages = ["en", "de", "fe", "zh-cn", "es", "nl", "tr", "it", "ja"]
 language_to_model = {
     "de": "tts_models/de/thorsten/tacotron2-DCA",
     "en": "tts_models/de/thorsten/tacotron2-DCA",
-    "fe": "tts_models/fr/mai/tacotron2-DDC",
+    "fr": "tts_models/fr/mai/tacotron2-DDC",
     "zh-cn": "tts_models/zh-CN/baker/tacotron2-DDC-GST",
     "es": "tts_models/es/mai/tacotron2-DDC",
     "nl": "tts_models/nl/mai/tacotron2-DDC",
@@ -50,21 +50,31 @@ def hello_world():
     return render_template("index.html")
 
 
-@app.route("/submit", methods=["POST"])
+@app.route("/submit", methods=["POST", "GET"])
 def submit():
     text_unsafe = request.form.get("text")
 
     # Set default language model to use
     model_name = "tts_models/en/ljspeech/fast_pitch"
     # Get different language model if possible
-    if request.args.get("lang"):
-        language = request.args.get("lang").lower()
-        print(f"Attemping to use language {language}")
-        if language in supported_languages:
-            model_name = language_to_model[language]
-            print(f"Model name set to: {model_name}")
-        else:
-            print(f"Could not locate model for requested language: {language}")
+
+    # Get requested_language from get arg if present
+    requested_language = request.args.get("lang", None)
+    if requested_language is None:
+        requested_language = request.form.get("lang", None)
+
+    # Attempt to get
+    if requested_language is not None:
+        language = requested_language.lower()
+    else:
+        language = "en"
+
+    print(f"Attemping to use language {language}")
+    if language in supported_languages:
+        model_name = language_to_model[language]
+        print(f"Model name set to: {model_name}")
+    else:
+        print(f"Could not locate model for requested language: {language}")
 
     print(f"Model name is set to: {model_name}")
 
