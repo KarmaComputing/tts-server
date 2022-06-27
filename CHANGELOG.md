@@ -1,3 +1,15 @@
+# v0.0.12 (Mon Jun 27 2022)
+
+#### 🐛 Bug Fix
+
+- added ./run.sh fix #12 [#13](https://github.com/KarmaComputing/tts-server/pull/13) ([@chrisjsimpson](https://github.com/chrisjsimpson))
+
+#### Authors: 1
+
+- [@chrisjsimpson](https://github.com/chrisjsimpson)
+
+---
+
 # v0.0.11 (Thu May 26 2022)
 
 #### ⚠️ Pushed to `main`
