@@ -52,7 +52,11 @@ def hello_world():
 
 @app.route("/submit", methods=["POST", "GET"])
 def submit():
-    text_unsafe = request.form.get("text")
+    text_unsafe = request.form.get("text", None)
+
+    # If not via post, get text_unsafe from request arg
+    if text_unsafe is None:
+        text_unsafe = request.args.get("lang", None)
 
     # Set default language model to use
     model_name = "tts_models/en/ljspeech/fast_pitch"
