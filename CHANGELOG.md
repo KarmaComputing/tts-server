@@ -1,3 +1,15 @@
+# v0.0.14 (Mon Jun 27 2022)
+
+#### 🐛 Bug Fix
+
+- 14 support language selection [#15](https://github.com/KarmaComputing/tts-server/pull/15) ([@chrisjsimpson](https://github.com/chrisjsimpson))
+
+#### Authors: 1
+
+- [@chrisjsimpson](https://github.com/chrisjsimpson)
+
+---
+
 # v0.0.13 (Mon Jun 27 2022)
 
 #### ⚠️ Pushed to `main`
