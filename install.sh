@@ -41,6 +41,9 @@ cmake --build . --parallel 16 --target install
 sudo apt-get install libsndfile1
 sudo -iu tts
 
+# Install espeak
+apt-get install espeak -y
+
 python3 -m venv venv
 . venv/bin/activate
 pip install wheel
