@@ -30,7 +30,7 @@ language_to_model = {
     "nl": "tts_models/nl/mai/tacotron2-DDC",
     "tr": "tts_models/tr/common-voice/glow-tts",
     "it": "tts_models/it/mai_female/glow-tts",
-    "ja": " 19: tts_models/ja/kokoro/tacotron2-DDC",
+    "ja": "tts_models/ja/kokoro/tacotron2-DDC",
 }
 
 app = Flask(__name__)
