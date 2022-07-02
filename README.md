@@ -68,7 +68,7 @@ curl 'https://api.example.com/submit' \
   --compressed
 ```
 
-German
+German `de`
 ```
 curl 'https://api.example.com/submit' \
   -H 'authority: api.verby.co' \
@@ -78,9 +78,9 @@ curl 'https://api.example.com/submit' \
   --compressed
 ```
 
-## fetch
+## fetch example for French `fr`
 
-French
+French `fr`
 ```
 fetch("https://api.example.com/submit", {
   "headers": {
@@ -92,3 +92,19 @@ fetch("https://api.example.com/submit", {
   "mode": "cors",
 });
 ```
+
+# How to I api request the other languages?
+
+Change the `lang` attribute in your api call to a supported language code.
+The [language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) currently supported are:
+
+- `en` English
+- `de` German
+- `es` Spanish
+- `fr` French
+- `de` German
+- `zh-cn` Chinese
+- `nl` Dutch (Standard)
+- `tr` Turkish
+- `it` Italian (Standard)
+- `ja` Japanese
