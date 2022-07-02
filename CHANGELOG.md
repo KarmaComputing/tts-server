@@ -1,3 +1,15 @@
+# v0.0.15 (Sat Jul 02 2022)
+
+#### ⚠️ Pushed to `main`
+
+- correct ja / japanese model dict ([@chrisjsimpson](https://github.com/chrisjsimpson))
+
+#### Authors: 1
+
+- [@chrisjsimpson](https://github.com/chrisjsimpson)
+
+---
+
 # v0.0.14 (Mon Jun 27 2022)
 
 #### 🐛 Bug Fix
