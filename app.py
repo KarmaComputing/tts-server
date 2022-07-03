@@ -10,6 +10,7 @@ from flask import (
     redirect,
     url_for,
 )
+from flask_cors import CORS
 import subprocess
 from time import time_ns
 
@@ -34,6 +35,7 @@ language_to_model = {
 }
 
 app = Flask(__name__)
+CORS(app)
 app.config.update(os.environ)
 
 UPLOADS_BATH_PATH = app.config.get("UPLOADS_BATH_PATH")
