@@ -1,3 +1,15 @@
+# v0.0.17 (Sun Jul 03 2022)
+
+#### 🐛 Bug Fix
+
+- Fix #16 add cors headers [#17](https://github.com/KarmaComputing/tts-server/pull/17) ([@chrisjsimpson](https://github.com/chrisjsimpson))
+
+#### Authors: 1
+
+- [@chrisjsimpson](https://github.com/chrisjsimpson)
+
+---
+
 # v0.0.16 (Sat Jul 02 2022)
 
 #### ⚠️ Pushed to `main`
